@@ -5,6 +5,7 @@ moment.locale("en");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/admin");
 
   eleventyConfig.addFilter("dateIso", (date) => {
     return moment(date).toISOString();
